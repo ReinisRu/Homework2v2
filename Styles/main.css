@@ -4,6 +4,32 @@ body {
   color: white;
 }
 
+.rekl-narrow {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.rekl-square {
+  max-width: 100%;
+  height: auto;
+}
+
+.m-child.sidebar-feature-5-1h .m-child.sidebar-feature-5-1v {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .header-container {
   display: -ms-grid;
   display: grid;
@@ -49,8 +75,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (3em)[9];
-      grid-template-rows: repeat(9, 3em);
+  -ms-grid-rows: (auto)[9];
+      grid-template-rows: repeat(9, auto);
   -webkit-column-gap: 8px;
           column-gap: 8px;
   row-gap: 5px;
@@ -105,8 +131,13 @@ body {
   grid-area: al;
 }
 
-.m-child.sidebar-feature-5-1 {
-  grid-area: sf;
+.m-child.sidebar-feature-5-1h {
+  grid-area: sfh;
+  display: none;
+}
+
+.m-child.sidebar-feature-5-1v {
+  grid-area: sfv;
   display: none;
 }
 
@@ -157,12 +188,12 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: (8em)[6];
-        grid-template-rows: repeat(6, 8em);
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
     -webkit-column-gap: 8px;
             column-gap: 8px;
     row-gap: 5px;
-        grid-template-areas: "hf hf hf hf hf hf hf hf hf hf hf hf" "ha ha ha ha ha ha ha ha ha ha ha ha" "af af af af af af af af af rli rli rli" "al al al al al al al al al al al al" "sf sf sf sf sf sf sf sf sf sf sf sf" "fo fo fo fo fo fo fo fo fo fo fo fo";
+        grid-template-areas: "hf hf hf hf hf hf hf hf hf hf hf hf" "ha ha ha ha ha ha ha ha ha ha ha ha" "af af af af af af af af af rli rli rli" "al al al al al al al al al al al al" "sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh" "fo fo fo fo fo fo fo fo fo fo fo fo";
   }
   .m-child {
     display: -webkit-box;
@@ -214,14 +245,18 @@ body {
     -ms-grid-column-span: 12;
     grid-area: al;
   }
-  .m-child.sidebar-feature-5-1 {
+  .m-child.sidebar-feature-5-1h {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
-    grid-area: sf;
+    grid-area: sfh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .m-child.sidebar-feature-5-1v {
+    grid-area: sfv;
+    display: none;
   }
   .m-child.footer-6 {
     -ms-grid-row: 6;
@@ -276,12 +311,12 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 8em 20em 8em;
-        grid-template-rows: 8em 20em 8em;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
     -webkit-column-gap: 8px;
             column-gap: 8px;
     row-gap: 5px;
-        grid-template-areas: "hf hf hf hf hf hf ha ha ha rli rli rli" "af af af al al al al al al sf sf sf" "fo fo fo fo fo fo fo fo fo fo fo fo";
+        grid-template-areas: "hf hf hf hf hf hf ha ha ha rli rli rli" "af af af al al al al al al sfv sfv sfv" "fo fo fo fo fo fo fo fo fo fo fo fo";
   }
   .m-child {
     display: -webkit-box;
@@ -333,11 +368,15 @@ body {
     -ms-grid-column-span: 6;
     grid-area: al;
   }
-  .m-child.sidebar-feature-5-1 {
+  .m-child.sidebar-feature-5-1h {
+    grid-area: sfh;
+    display: none;
+  }
+  .m-child.sidebar-feature-5-1v {
     -ms-grid-row: 2;
     -ms-grid-column: 10;
     -ms-grid-column-span: 3;
-    grid-area: sf;
+    grid-area: sfv;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -11,6 +11,21 @@ body {
     font-family: $primary-font;
     color: white;
 }
+.rekl-narrow {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  object-fit: contain;
+}
+.rekl-square {
+  max-width: 100%;
+  height: auto;
+}
+.m-child.sidebar-feature-5-1h .m-child.sidebar-feature-5-1v {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
 
 //Mobile grid for Header
 .header-container {
@@ -41,7 +56,7 @@ body {
   .main-container {
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    grid-template-rows: repeat(9,3em);
+    grid-template-rows: repeat(9,auto);
     column-gap: 8px;
     row-gap: 5px;
     grid-template-areas:
@@ -79,8 +94,12 @@ body {
   .m-child.article-listing-4-2 {
     grid-area: al;
   }
-  .m-child.sidebar-feature-5-1 {
-    grid-area: sf;
+  .m-child.sidebar-feature-5-1h {
+    grid-area: sfh;
+    display: none;
+  }
+  .m-child.sidebar-feature-5-1v {
+    grid-area: sfv;
     display: none;
   }
   .m-child.footer-6 {
@@ -115,7 +134,7 @@ body {
     .main-container {
         display: grid;
         grid-template-columns:repeat(12,1fr);
-        grid-template-rows: repeat(6, 8em);
+        grid-template-rows: repeat(6, auto);
         column-gap: 8px;
         row-gap: 5px;
         grid-template-areas:
@@ -123,7 +142,7 @@ body {
         "ha ha ha ha ha ha ha ha ha ha ha ha"
         "af af af af af af af af af rli rli rli"
         "al al al al al al al al al al al al"
-        "sf sf sf sf sf sf sf sf sf sf sf sf"
+        "sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh"
         "fo fo fo fo fo fo fo fo fo fo fo fo"
       }
       .m-child {
@@ -151,9 +170,13 @@ body {
       .m-child.article-listing-4-2 {
         grid-area: al;
       }
-      .m-child.sidebar-feature-5-1 {
-        grid-area: sf;
+      .m-child.sidebar-feature-5-1h {
+        grid-area: sfh;
         display: flex;
+      }
+      .m-child.sidebar-feature-5-1v {
+        grid-area: sfv;
+        display: none;
       }
       .m-child.footer-6 {
         grid-area: fo;
@@ -193,12 +216,12 @@ body {
   .main-container {
       display: grid;
       grid-template-columns:repeat(12,1fr);
-      grid-template-rows: 8em 20em 8em;
+      grid-template-rows: auto auto auto;
       column-gap: 8px;
       row-gap: 5px;
       grid-template-areas:
       "hf hf hf hf hf hf ha ha ha rli rli rli"
-      "af af af al al al al al al sf sf sf"
+      "af af af al al al al al al sfv sfv sfv"
       "fo fo fo fo fo fo fo fo fo fo fo fo"
     }
     .m-child {
@@ -226,8 +249,12 @@ body {
     .m-child.article-listing-4-2 {
       grid-area: al;
     }
-    .m-child.sidebar-feature-5-1 {
-      grid-area: sf;
+    .m-child.sidebar-feature-5-1h {
+      grid-area: sfh;
+      display: none;
+    }
+    .m-child.sidebar-feature-5-1v {
+      grid-area: sfv;
       display: flex;
     }
     .m-child.footer-6 {
