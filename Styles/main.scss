@@ -112,10 +112,10 @@ body {
         grid-area: tool
       }
            //Tablet grid for Main
-      .main-container {
+    .main-container {
         display: grid;
         grid-template-columns:repeat(12,1fr);
-        grid-template-rows: repeat(6,3em);
+        grid-template-rows: repeat(6, 8em);
         column-gap: 8px;
         row-gap: 5px;
         grid-template-areas:
@@ -146,7 +146,7 @@ body {
         display: flex;
       }
       .m-child.article-feature-4-1 {
-        grid-area: af;
+        grid-area: af;  
       }
       .m-child.article-listing-4-2 {
         grid-area: al;
@@ -159,4 +159,78 @@ body {
         grid-area: fo;
       }
     }
-     //Tablet grid for Main
+//Desktop grid for Header
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 8px;
+  }
+  .header-container {
+      display: grid;
+      grid-template-columns: 2fr 7fr 3fr;
+      grid-template-rows: 50px;
+      column-gap: 8px;
+      row-gap: 5px;
+      margin-bottom: 5px;
+      grid-template-areas:
+      "bran navi tool"
+    }
+    .h-child {
+      display: flex;
+      background-color: rgb(99, 99, 102);
+    }
+    .h-child.brand-1-1 {
+      grid-area: bran
+    }
+    .h-child.global-nav-1-2 {
+      grid-area: navi
+    }
+    .h-child.tools-1-3 {
+      grid-area: tool
+    }
+         //Desktop grid for Main
+  .main-container {
+      display: grid;
+      grid-template-columns:repeat(12,1fr);
+      grid-template-rows: 8em 20em 8em;
+      column-gap: 8px;
+      row-gap: 5px;
+      grid-template-areas:
+      "hf hf hf hf hf hf ha ha ha rli rli rli"
+      "af af af al al al al al al sf sf sf"
+      "fo fo fo fo fo fo fo fo fo fo fo fo"
+    }
+    .m-child {
+      display: flex;
+      background-color: rgb(99, 99, 102);
+    }
+    .m-child.hero-feature-2-1 {
+      grid-area: hf;
+      display: flex;
+    }
+    .m-child.hero-action-2-2 {
+      grid-area: ha;
+    }
+    .m-child.rekl-3-m {
+      grid-area: rma;
+      display: none;
+    }
+    .m-child.rekl-3-l {
+      grid-area: rli;
+      display: flex;
+    }
+    .m-child.article-feature-4-1 {
+      grid-area: af;  
+    }
+    .m-child.article-listing-4-2 {
+      grid-area: al;
+    }
+    .m-child.sidebar-feature-5-1 {
+      grid-area: sf;
+      display: flex;
+    }
+    .m-child.footer-6 {
+      grid-area: fo;
+    }
+  }
