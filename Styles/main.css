@@ -2,14 +2,9 @@ body {
   background-color: #e5e5ea;
   font-family: "Roboto", sans-serif;
   color: white;
-  -webkit-margin-before: 0.83em;
-          margin-block-start: 0.83em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 8px;
 }
 
 p {
@@ -101,12 +96,12 @@ h2 {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[9];
-      grid-template-rows: repeat(9, auto);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
   -webkit-column-gap: 8px;
           column-gap: 8px;
   row-gap: 5px;
-      grid-template-areas: "ha ha" "af af" "af af" "rma rma" "rma rma" "al al" "al al" "al al" "fo fo";
+      grid-template-areas: "h h" "af af" "rma rma" "al al" "fo fo";
 }
 
 .m-child {
@@ -125,17 +120,14 @@ h2 {
   background-color: #636366;
 }
 
-.m-child.sidebar-feature-5-1h .m-child.sidebar-feature-5-1v {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hero-container {
+  background-image: url(../Images/DSC04205.JPG);
+  background-size: cover;
+  min-height: 200px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: h;
 }
 
 .m-child.hero-feature-2-1 {
@@ -144,15 +136,11 @@ h2 {
 }
 
 .m-child.hero-action-2-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: ha;
 }
 
 .m-child.rekl-3-m {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: rma;
@@ -165,15 +153,13 @@ h2 {
 
 .m-child.article-feature-4-1 {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: af;
 }
 
 .m-child.article-listing-4-2 {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: al;
@@ -190,7 +176,7 @@ h2 {
 }
 
 .m-child.footer-6 {
-  -ms-grid-row: 9;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: fo;
@@ -236,12 +222,12 @@ h2 {
     display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: (auto)[6];
-        grid-template-rows: repeat(6, auto);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
     -webkit-column-gap: 8px;
             column-gap: 8px;
     row-gap: 5px;
-        grid-template-areas: "hf hf hf hf hf hf hf hf hf hf hf hf" "ha ha ha ha ha ha ha ha ha ha ha ha" "af af af af af af af af af rli rli rli" "al al al al al al al al al al al al" "sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh" "fo fo fo fo fo fo fo fo fo fo fo fo";
+        grid-template-areas: "h h h h h h h h h h h h" "af af af af af af af af af rli rli rli" "al al al al al al al al al al al al" "sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh" "fo fo fo fo fo fo fo fo fo fo fo fo";
   }
   .m-child {
     display: -webkit-box;
@@ -249,31 +235,31 @@ h2 {
     display: flex;
     background-color: #636366;
   }
-  .m-child.hero-feature-2-1 {
+  .hero-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
+    grid-area: h;
+    min-height: 300px;
+  }
+  .m-child.hero-feature-2-1 {
     grid-area: hf;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .m-child.hero-action-2-2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-area: ha;
   }
   .m-child.rekl-3-m {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: rma;
     display: none;
   }
   .m-child.rekl-3-l {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 10;
     -ms-grid-column-span: 3;
     grid-area: rli;
@@ -282,19 +268,19 @@ h2 {
     display: flex;
   }
   .m-child.article-feature-4-1 {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
     grid-area: af;
   }
   .m-child.article-listing-4-2 {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: al;
   }
   .m-child.sidebar-feature-5-1h {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: sfh;
@@ -307,7 +293,7 @@ h2 {
     display: none;
   }
   .m-child.footer-6 {
-    -ms-grid-row: 6;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: fo;
@@ -315,11 +301,6 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
-  body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 8px;
-  }
   .header-container {
     display: -ms-grid;
     display: grid;
@@ -364,7 +345,7 @@ h2 {
     -webkit-column-gap: 8px;
             column-gap: 8px;
     row-gap: 5px;
-        grid-template-areas: "hf hf hf hf hf hf ha ha ha rli rli rli" "af af af al al al al al al sfv sfv sfv" "fo fo fo fo fo fo fo fo fo fo fo fo";
+        grid-template-areas: "h h h h h h h h h rli rli rli" "af af af al al al al al al sfv sfv sfv" "fo fo fo fo fo fo fo fo fo fo fo fo";
   }
   .m-child {
     display: -webkit-box;
@@ -372,24 +353,23 @@ h2 {
     display: flex;
     background-color: #636366;
   }
-  .m-child.hero-feature-2-1 {
+  .m-child.hero-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+    -ms-grid-column-span: 9;
+    grid-area: h;
+  }
+  .m-child.hero-feature-2-1 {
     grid-area: hf;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .m-child.hero-action-2-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 3;
     grid-area: ha;
   }
   .m-child.rekl-3-m {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: rma;

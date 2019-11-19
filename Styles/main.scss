@@ -10,10 +10,9 @@ body {
     background-color: $background-primary-color;
     font-family: $primary-font;
     color: white;
-    margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 5px;
-  margin-inline-end: 0px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 8px;
   }
   p {
     display: flex;
@@ -72,17 +71,13 @@ h2 {
   .main-container {
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    grid-template-rows: repeat(9,auto);
+    grid-template-rows: repeat(5,auto);
     column-gap: 8px;
     row-gap: 5px;
     grid-template-areas:
-    "ha ha"
-    "af af"
+    "h h"
     "af af"
     "rma rma"
-    "rma rma"
-    "al al"
-    "al al"
     "al al"
     "fo fo"
   }
@@ -93,10 +88,11 @@ h2 {
     justify-content: flex-start;
     background-color: rgb(99, 99, 102);
   }
-  .m-child.sidebar-feature-5-1h .m-child.sidebar-feature-5-1v {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  .hero-container {
+    background-image: url(../Images/DSC04205.JPG);
+    background-size: cover;
+    min-height: 200px;
+    grid-area: h
   }
   .m-child.hero-feature-2-1 {
     grid-area: hf;
@@ -158,12 +154,11 @@ h2 {
     .main-container {
         display: grid;
         grid-template-columns:repeat(12,1fr);
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(5, auto);
         column-gap: 8px;
         row-gap: 5px;
         grid-template-areas:
-        "hf hf hf hf hf hf hf hf hf hf hf hf"
-        "ha ha ha ha ha ha ha ha ha ha ha ha"
+        "h h h h h h h h h h h h"
         "af af af af af af af af af rli rli rli"
         "al al al al al al al al al al al al"
         "sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh sfh"
@@ -172,6 +167,10 @@ h2 {
       .m-child {
         display: flex;
         background-color: rgb(99, 99, 102);
+      }
+      .hero-container {
+        grid-area: h;
+        min-height: 300px;
       }
       .m-child.hero-feature-2-1 {
         grid-area: hf;
@@ -208,11 +207,7 @@ h2 {
     }
 //Desktop grid for Header
 @media screen and (min-width: 992px) {
-  body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 8px;
-  }
+  
   .header-container {
       display: grid;
       grid-template-columns: 2fr 7fr 3fr;
@@ -244,13 +239,16 @@ h2 {
       column-gap: 8px;
       row-gap: 5px;
       grid-template-areas:
-      "hf hf hf hf hf hf ha ha ha rli rli rli"
+      "h h h h h h h h h rli rli rli"
       "af af af al al al al al al sfv sfv sfv"
       "fo fo fo fo fo fo fo fo fo fo fo fo"
     }
     .m-child {
       display: flex;
       background-color: rgb(99, 99, 102);
+    }
+    .m-child.hero-container {
+      grid-area: h
     }
     .m-child.hero-feature-2-1 {
       grid-area: hf;
