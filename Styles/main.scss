@@ -1,29 +1,26 @@
 @import 'colors.scss';
 @import 'fonts.scss';
 
-// @mixin border-radius($radius) {
-//     -webkit-border-radius: $radius;
-//     -moz-border-radius: $radius;
-//   -ms-border-radius: $radius;
-//   border-radius: $radius;
 body {
     background-color: $background-primary-color;
     font-family: $primary-font;
     color: white;
     max-width: 1200px;
-    margin: auto;
+    margin: 0px;
     padding: 8px;
   }
   p {
     display: flex;
+    margin: 0px;
     padding: 5px;
     text-align: justify;
 }
 h2 {
   display: flex;
+  margin: 0px;
   padding: 5px;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 100;
 }
 .rekl-narrow {
   width: 100%;
@@ -163,6 +160,7 @@ h2 {
         background-color: rgb(99, 99, 102);
       }
       .hero-container {
+        display: flex;
         grid-area: h;
         min-height: 300px;
       }
