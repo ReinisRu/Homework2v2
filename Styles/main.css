@@ -48,7 +48,7 @@ h2 {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: #dc0000;
+  background-color: #1a3ce6;
   background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -56,7 +56,7 @@ h2 {
 }
 
 .Hero-button:hover {
-  background-color: red;
+  background-color: #1a5ee6;
 }
 
 .Hero-button:active {
