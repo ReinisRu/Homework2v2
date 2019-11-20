@@ -23,33 +23,58 @@ h2 {
   margin: 0px;
   padding: 5px;
   font-size: 1.2em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
-.rekl-narrow {
-  width: 100%;
-  max-width: 570px;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+.Hero-headding {
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #000;
+  color: #ffe600;
+  font-weight: 800;
 }
 
-.rekl-square {
-  max-width: 100%;
-  height: auto;
+.Hero-textbox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffe600;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.button-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 0px;
+}
+
+.hero-child.hero-feature-2-1 {
+  color: #333333;
+}
+
+.hero-child.hero-action-2-2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .Hero-button {
   width: 150px;
   border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
+  line-height: .5;
+  padding: 10px 10px;
+  font-size: 1.0rem;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: #1a3ce6;
+  background-color: #3755e6;
   background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -63,6 +88,19 @@ h2 {
 .Hero-button:active {
   -webkit-box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.rekl-narrow {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.rekl-square {
+  max-width: 100%;
+  height: auto;
 }
 
 .header-container {
@@ -149,8 +187,8 @@ h2 {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
+  -ms-grid-rows: (100px)[2];
+      grid-template-rows: repeat(2, 100px);
   -webkit-column-gap: 8px;
           column-gap: 8px;
   row-gap: 5px;
@@ -268,8 +306,8 @@ h2 {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
+    -ms-grid-rows: (150px)[2];
+        grid-template-rows: repeat(2, 150px);
         grid-template-areas: "hf hf" "ha ha";
   }
   .hero-child.hero-feature-2-1 {
@@ -349,9 +387,18 @@ h2 {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    -ms-grid-rows: 300px;
+        grid-template-rows: 300px;
         grid-template-areas: "hf hf ha" "hf hf ha";
+  }
+  .hero-child.hero-action-2-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .m-child.sidebar-feature-5-1h {
     display: none;
