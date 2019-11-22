@@ -11,7 +11,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.0em;
+  font-size: 0.8rem;
+  font-weight: 200;
   margin: 0px;
   padding: 5px;
   text-align: justify;
@@ -23,13 +24,13 @@ h2 {
   display: flex;
   margin: 0px;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 1.0rem;
   font-weight: 400;
 }
 
 .Hero-headding {
   font-family: 'Spy Agency Semi-Italic', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 1px #000;
   color: #ffe600;
   font-weight: 800;
@@ -316,7 +317,7 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
   .hero-child.hero-action-2-2 {
     display: -webkit-box;
@@ -383,7 +384,7 @@ h2 {
     -webkit-column-gap: 8px;
             column-gap: 8px;
     row-gap: 5px;
-        grid-template-areas: "h h h h h h h h h rli rli rli" "af af af al al al al al al sfv sfv sfv" "fo fo fo fo fo fo fo fo fo fo fo fo";
+        grid-template-areas: "h h h h h h h h h rli rli rli" "al al al af af af af af af sfv sfv sfv" "fo fo fo fo fo fo fo fo fo fo fo fo";
   }
   .hero-grid {
     display: -ms-grid;
