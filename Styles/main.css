@@ -27,6 +27,7 @@ h2 {
 }
 
 .Hero-headding {
+  font-family: 'Spy Agency Semi-Italic', sans-serif;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px #000;
   color: #ffe600;
@@ -106,7 +107,7 @@ h2 {
 .header-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 50px 50px;
       grid-template-rows: 50px 50px;
@@ -146,9 +147,9 @@ h2 {
 .main-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: auto,auto,auto,auto,auto;
+  -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
   -webkit-column-gap: 8px;
           column-gap: 8px;
@@ -185,9 +186,9 @@ h2 {
 .hero-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr,1fr;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 100px, 100px;
+  -ms-grid-rows: (100px)[2];
       grid-template-rows: repeat(2, 100px);
   -webkit-column-gap: 8px;
           column-gap: 8px;
@@ -289,9 +290,9 @@ h2 {
   .main-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+    -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: auto,auto,auto,auto,auto;
+    -ms-grid-rows: (auto)[5];
         grid-template-rows: repeat(5, auto);
     -webkit-column-gap: 8px;
             column-gap: 8px;
@@ -304,9 +305,9 @@ h2 {
   .hero-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr, 1fr;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 150px, 150px;
+    -ms-grid-rows: (150px)[2];
         grid-template-rows: repeat(2, 150px);
         grid-template-areas: "hf hf" "ha ha";
   }
@@ -373,7 +374,7 @@ h2 {
   .main-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+    -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
@@ -385,7 +386,7 @@ h2 {
   .hero-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr, 1fr, 1fr;
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 300px;
         grid-template-rows: 300px;
