@@ -11,10 +11,12 @@ body {
   }
   p {
     display: flex;
+    font-size: 1.0em;
     margin: 0px;
     padding: 5px;
     text-align: justify;
 }
+
 h2 {
   display: flex;
   margin: 0px;
@@ -229,6 +231,7 @@ h2 {
       }
       .hero-child.hero-feature-2-1 {
         display: flex;
+        font-size: 0.8em;
       }
       .hero-child.hero-action-2-2 {
         display: flex;
